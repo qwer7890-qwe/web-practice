@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>나의 첫 웹페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>나혜에게 💌</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:#fff0f4;color:#613747;font-family:"맑은 고딕",sans-serif;text-align:center}main{width:100%;max-width:440px;padding:48px 24px;border-radius:28px;background:white;box-shadow:0 16px 50px #d7789626}.heart{font-size:64px}h1{font-size:32px}p{line-height:1.9}button{margin-top:20px;padding:15px 26px;border:0;border-radius:30px;background:#e85c88;color:white;font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #613747;outline-offset:4px}#message{margin-top:24px;color:#c43d6a;font-weight:bold}
+</style>
 </head>
 <body>
-  <h1>건우의 웹서버 실험실</h1>
-  <p>내 컴퓨터의 서버가 휴대폰에 보내준 페이지예요!</p>
-  <button onclick="this.textContent = '클릭 성공!'">
-    눌러보세요
-  </button>
+<main>
+<div class="heart">💗</div>
+<h1>나혜야, 사랑해</h1>
+<p>너에게 전하고 싶은 말을<br>작은 페이지에 담아봤어.<br><br>오늘도 네가 웃는 순간이 많았으면 좋겠어.</p>
+<button onclick="document.getElementById('message').hidden = false">내 마음 열어보기 💌</button>
+<p id="message" hidden aria-live="polite">함께하는 순간들을 소중히 생각해.<br>사랑해, 나혜야 🌷</p>
+</main>
 </body>
 </html>
